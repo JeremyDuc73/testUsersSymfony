@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+    <h1>Bienvenue sur ton espace {{ app.user.username }}</h1>
+    <a href="{{ path('app_home') }}" class="btn btn-success">RETOUR A L'ACCUEIL</a>
+{% endblock %}
